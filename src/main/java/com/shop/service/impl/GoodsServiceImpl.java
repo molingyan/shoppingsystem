@@ -30,10 +30,6 @@ public class GoodsServiceImpl extends ServiceImpl<GoodsMapper, Goods> implements
 
     @Override
     public Result getGoodsById(String goodsId) {
-        int a[]={0};
-        for (int i = 0; i <1 ; i++) {
-            System.out.println(a[1]);
-        }
         String goodsStr;
         Goods goods;
         try {
