@@ -1,0 +1,29 @@
+spring:
+#  config:
+#    activate:
+#      on-profile: dev
+  profiles:
+    active: dev
+
+  mvc:
+    static-path-pattern: /**
+  thymeleaf:
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML5
+
+
+
+server:
+  port: 8082
+
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:com/shop/dao/*.xml
+
+

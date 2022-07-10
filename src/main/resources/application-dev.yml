@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shoppingsystem?setUnicode=true&characterEncoding=utf8&useAffectedRows=true
+    username: root
+    password: 123456
+
+  #  mvc:
+#    pathmatch:
+#      matching-strategy: ant_path_matcher
+
+#解决循环依赖问题
+  main:
+    allow-circular-references: true
+  redis:
+    port: 6379
+    host: 1.14.134.61
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+
+
+
+#server:
+#  port: 8083
+
+
+
+
+# Swagger配置
+swagger:
+  # 是否开启swagger
+  enabled: true
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.OrderMapper">
+
+
+
+
+    <select id="selectOrderList"  resultType="java.util.Map">
+    select * from `order`
+  /*      select o.order_id,o.order_time,o.order_state,u.user_name,con.consignee_name,g.goods_name,g.goods_price
+        from `order` o,consignee con,user u,goods g
+        where o.user_id = u.user_id
+          AND o.consignee_id = con.consignee_id
+          AND o.goods_id = g.good_id*/
+    </select>
+
+</mapper>
